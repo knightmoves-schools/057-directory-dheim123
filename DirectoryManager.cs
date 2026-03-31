@@ -6,7 +6,9 @@ public class DirectoryManager
 {
     public void Create(string directoryName) 
     {
-        Directory.CreateDirectory(directoryName);
+        string fullPath = Path.Combine(directoryName, "test-directory");
+        
+        Directory.CreateDirectory(fullPath);
     }
 }
 
