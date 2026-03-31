@@ -1,8 +1,12 @@
-﻿namespace knightmoves;
+using System.IO;
 
-public class DirectoryManager{
+namespace knightmoves;
 
-    public void Create(string directoryName){
-        Directory.CreateDirectory(test-directory);
+public class DirectoryManager 
+{
+    public void Create(string directoryName) 
+    {
+        Directory.CreateDirectory(directoryName);
     }
 }
+
